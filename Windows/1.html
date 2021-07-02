@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+    <title>redteam pentest Write-ups</title>
+    
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Blog Template">
+    <meta name="author" content="Xiaoying Riley at 3rd Wave Media">    
+    <link rel="shortcut icon" href="favicon.ico"> 
+    
+    <!-- FontAwesome JS-->
+	<script defer src="../assets/fontawesome/js/all.min.js"></script>
+    
+    <!-- Plugin CSS -->
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.14.2/styles/monokai-sublime.min.css">
+    
+    <!-- Theme CSS -->  
+    <link id="theme-style" rel="stylesheet" href="../assets/css/theme-7.css">
+    
+
+</head> 
+
+<body>
+    
+    <header class="header text-center">	    
+	    <h1 class="blog-name pt-lg-4 mb-0"><a href="../index.html">redteam pentest Blog</a></h1>
+        
+	    <nav class="navbar navbar-expand-lg navbar-dark" >
+           
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+			</button>
+
+			<div id="navigation" class="collapse navbar-collapse flex-column" >
+				<div class="profile-section pt-3 pt-lg-0">			
+					
+					<div class="bio mb-3">Hi, my name is ibrahim said. <br>I am a CyberSecurity  red team pentest and researcher and CTF player.<br><a href="../about.html">Find out more about me</a></div><!--//bio-->
+					<ul class="social-list list-inline py-3 mx-auto">
+			            <li class="list-inline-item"><a href="https://twitter.com/ibrahimsaidkali"><i class="fab fa-twitter fa-fw"></i></a></li>
+			            <li class="list-inline-item"><a href="https://www.linkedin.com/in/ibrahim-said-0331691b9/"><i class="fab fa-linkedin-in fa-fw"></i></a></li>
+			            <li class="list-inline-item"><a href="https://github.com/Blackhat-red-team"><i class="fab fa-github-alt fa-fw"></i></a></li>
+			            <li class="list-inline-item"><a href="https://www.facebook.com/ibrahimsaidpentest"><i class="fab fa-facebook-f"></i></a></li>
+			        </ul><!--//social-list-->
+			        <hr> 
+				</div><!--//profile-section-->
+				
+				<ul class="navbar-nav flex-column text-left">
+					<li class="nav-item">
+					    <a class="nav-link" href="../index.html"><i class="fas fa-home fa-fw mr-2"></i>Blog Home <span class="sr-only">(current)</span></a>
+					</li>
+					
+					<li class="nav-item">
+					    <a class="nav-link" href="../about.html"><i class="fas fa-user fa-fw mr-2"></i>About Me</a>
+					</li>
+				</ul>
+				
+			</div>
+		</nav>
+    </header>
+    
+    <div class="main-wrapper">
+	    
+	    <article class="blog-post px-3 py-5 p-md-5">
+		    <div class="container">
+			    <header class="blog-post-header">
+				    <h2 class="title mb-2"><a href="https://tryhackme.com/room/investigatingwindows">فحص الويندوز</a></h2>
+			    </header>
+			    </a>
+		    <h4><strong>المهمة 1 - فحص الويندوز </strong></h4>
+	            <p>Press "Start Machine"</p>
+		    <p>Connect to the machine using RDP. The credentials the machine are as follows:</p>
+		    <p>Username: Administrator</p>
+		    <p>Password: letmein123!</p>
+		    <p><strong> ما هو إصدار وسنة آلة الويندوز؟ </strong></p>
+		    <p>1. Click the Start button on your Windows taskbar.</p>
+		    <p>2. Choose Settings➪Control Panel.> \System and Security\System</p>
+		    <p>Windows Server 2016</p>
+	            <img src="images/win1/version1.png" alt="image" >			
+		    <p><strong>أي مستخدم قام بتسجيل الدخول في الماضي؟</strong></p>
+	            <p>Administrator</p>
+		    <p><strong>متى آخر مرة سجل جون الدخول إلى النظام؟</strong></p>
+		    <p><strong>Answer format: MM/DD/YYYY H:MM:SS AM/PM</strong></p>
+		    <p>cmd > net user john</p>
+	            <p>03/02/2019 5:48:32 PM</p>
+	            <img src="images/win1/d1.png" alt="image" >			
+		    <p><strong>What IP does the system connect to when it first starts?</strong></p>
+	            <p>10.34.2.3</p>
+	            <img src="images/win1/ip.png" alt="image" >	
+		    <p><strong>What two accounts had administrative privileges (other than the Administrator user)? </strong></p>
+	            <p><strong>Answer format: username1, username2</strong></p>
+		    <p>usrmgr > Groups > Administrator</p>
+	            <p>Jenny, Guest</p>
+	            <img src="images/win1/user1,2.png" alt="image" >	
+	            <p><strong>Whats the name of the scheduled task that is malicous.</strong></p>
+	            <p>Clean file system</p>
+	            <img src="images/win1/task.png" alt="image" >	
+	            <p><strong>ما هو الملف الذي كانت المهمة تحاول تشغيله يوميًا؟</strong></p>
+	            <p>nc.ps1</p>
+	            <img src="images/win1/run.png" alt="image" >	
+	            <p><strong>ما هو المنفذ الذي استمع إليه هذا الملف محليًا </strong></p>
+	            <p>1348</p>	
+		    <p><strong>متى آخر مرة سجلت جيني؟</strong></p>
+		    <p>cmd > net user jenny</p>
+	            <p>Never</p>
+	            <img src="images/win1/jenny.png" alt="image" >
+		    <p><strong>At what date did the compromise take place?</strong></p>
+	            <p><strong>Answer format: MM/DD/YYYY</strong></p>
+                    <p>03/02/2019</p>
+	            <p><strong>At what time did Windows first assign special privileges to a new logon?</strong></p>
+		    <p><strong>Answer format: MM/DD/YYYY HH:MM:SS AM/PM</strong></p>
+	            <p>event viewer > security</p>
+	            <p>03/02/2019 4:04:49 PM</p>
+	            <img src="images/win1/logon.png" alt="image" >
+	            <p><strong>ما الأداة التي تم استخدامها للحصول على كلمات مرور Windows؟</strong></p>
+	            <p>Task Scheduler > GameOver > Actions </p>
+	            <p>Mimikatz</p>
+	            <img src="images/win1/task2.png" alt="image" >
+	            <p><strong>ماذا كان للمهاجمين التحكم الخارجي وخوادم الأوامر IP؟</strong></p>
+		    <p>localhost(c:) > Windows > System32 > drivers > etc > </p>
+		    <p>76.32.97.132</p>
+	            <img src="images/win1/ip.png" alt="image" >
+	            <p><strong>ما هو اسم امتداد الصدفة الذي تم تحميله عبر موقع الخوادم؟</strong></p>
+		    <p>C:\inetpub\wwwroot</p>
+		    <p>.jsp</p>
+	            <img src="images/win1/jsp.png" alt="image" >
+	            <p><strong>ما هو آخر منفذ فتحه المهاجم؟</strong></p>
+		    <p>Windos Firewall > Inbound Rules</p>
+		    <p>1337</p>
+	            <p><strong>تحقق من وجود تسمم بنظام أسماء النطاقات ، ما هو الموقع الذي تم استهدافه؟</strong></p>
+		    <p>google.com</p>
+
+
+
+			    <div class="blog-post-body">
+				    
+				    <section class="blog-list px-3 py-5 p-md-5">
+		    <div class="container">
+			    
+			    
+			    
+				
+		    </div>
+	    </section>
+
+</body>
+</html> 

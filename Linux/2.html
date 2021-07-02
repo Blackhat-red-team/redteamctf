@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+    <title>InfoSec Write-ups</title>
+    
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Blog Template">
+    <meta name="author" content="Xiaoying Riley at 3rd Wave Media">    
+    <link rel="shortcut icon" href="favicon.ico"> 
+    
+    <!-- FontAwesome JS-->
+	<script defer src="../assets/fontawesome/js/all.min.js"></script>
+    
+    <!-- Plugin CSS -->
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.14.2/styles/monokai-sublime.min.css">
+    
+    <!-- Theme CSS -->  
+    <link id="theme-style" rel="stylesheet" href="../assets/css/theme-7.css">
+    
+
+</head> 
+
+<body>
+    
+    <header class="header text-center">	    
+	    <h1 class="blog-name pt-lg-4 mb-0"><a href="../index.html">Infosec Blog</a></h1>
+        
+	    <nav class="navbar navbar-expand-lg navbar-dark" >
+           
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+			</button>
+
+			<div id="navigation" class="collapse navbar-collapse flex-column" >
+				<div class="profile-section pt-3 pt-lg-0">
+					
+					<div class="bio mb-3">Hi, my name is ibrahim said. <br>I am a CyberSecurity redteam pentest and  researcher and CTF player.<br><a href="../about.html">Find out more about me</a></div><!--//bio-->
+					<ul class="social-list list-inline py-3 mx-auto">
+			            <li class="list-inline-item"><a href="https://twitter.com/ibrahimsaidkali"><i class="fab fa-twitter fa-fw"></i></a></li>
+			            <li class="list-inline-item"><a href="https://www.linkedin.com/in/ibrahim-said-0331691b9/"><i class="fab fa-linkedin-in fa-fw"></i></a></li>
+			            <li class="list-inline-item"><a href="https://github.com/Blackhat-red-team"><i class="fab fa-github-alt fa-fw"></i></a></li>
+			            <li class="list-inline-item"><a href="https://www.facebook.com/ibrahimsaidpentest"><i class="fab fa-facebook-f"></i></a></li>
+			        </ul><!--//social-list-->
+			        <hr> 
+				</div><!--//profile-section-->
+				
+				<ul class="navbar-nav flex-column text-left">
+					<li class="nav-item">
+					    <a class="nav-link" href="../index.html"><i class="fas fa-home fa-fw mr-2"></i>Blog Home <span class="sr-only">(current)</span></a>
+					</li>
+					
+					<li class="nav-item">
+					    <a class="nav-link" href="../about.html"><i class="fas fa-user fa-fw mr-2"></i>About Me</a>
+					</li>
+				</ul>
+				
+			</div>
+		</nav>
+    </header>
+    
+    <div class="main-wrapper">
+	    
+	    <article class="blog-post px-3 py-5 p-md-5">
+		    <div class="container">
+			    <header class="blog-post-header">
+				    <h2 class="title mb-2"><a href="https://tryhackme.com/room/linuxfundamentalspart2">Linux Fundamentals Part 2</a></h2>
+			    </header>
+			    </a>
+		    <h4><strong>Task 1 - Introduction </strong></h4>
+		    <p>Read and press complete</p>
+		    <h4><strong>Task 2 - Accessing Your Linux Machine Using SSH (Deploy) </strong></h4>
+		    <p><strong>  I've logged into the Linux Fundamentals Part 2 machine using SSH! </strong></p>
+		    <p>Press "Start Machine" and press complete</>
+	            <img src="images/Linux Part 2/ssh.png" alt="image" >			
+		    <h4><strong>Task 3 -  Introduction to Flags and Switches  </strong></h4>
+	            <p><strong> Explore the manual page of the ls command </strong></p>
+	            <p> press complete</p>
+	            <p><strong> What directional arrow key would we use to navigate down the manual page? </strong></p>
+	            <p> down </p>
+	            <p><strong>What flag would we use to display the output in a "human-readable" way? </strong></p>
+	            <p>-h  ( man ls ) </p>
+		    <h4><strong>Task 4 - Filesystem Interaction Continued  </strong></h4>
+		    <p><strong> How would you create the file named "newnote"? </strong></p>
+	            <p>touch newnote</p>
+	            <p><strong> On the deployable machine, what is the file type of "unknown1" in "tryhackme's" home directory? </strong></p>
+	            <p>ASCII text</p>
+	            <p><strong> How would we move the file "myfile" to the directory "myfolder" </strong></p>
+	            <p> mv myfile myfolder </p>
+	            <img src="images/Linux Part 2/mv.png" alt="image" >			
+		    <p><strong> What are the contents of this file? </strong></p>
+	            <p> THM{FILESYSTEM} </p>
+	            <img src="images/Linux Part 2/cat.png" alt="image" >
+		    <h4><strong>Task 5 - Permissions 101 </strong></h4>
+	            <p><strong> On the deployable machine, who is the owner of "important"? </strong></p>
+	            <p> user2 </p>
+	            <img src="images/Linux Part 2/-l.png" alt="image" >	
+	            <p><strong> What would the command be to switch to the user "user2"? </strong></p>
+	            <p> su user2 </p>
+	            <img src="images/Linux Part 2/su.png" alt="image" >	
+	            <p><strong> Now switch to this user "user2" using the password "user2" </strong></p>
+	            <p>No answer neededd</p>	
+	            <p><strong>Output the contents of "important", what is the flag?</strong></p>
+	            <p>THM{SU_USER2}</p>
+	            <img src="images/Linux Part 2/flag.png" alt="image" >	
+		    <h4><strong>Task 6 - Common Directories  </strong></h4>
+	            <p><strong>Read all that is in the task and press complete</strong></p>
+	            <p>No answer neededd</p>
+	            <p><strong>What is the directory path that would we expect logs to be stored in?</strong></p>
+	            <p>/var/log</p>
+	            <p><strong>What root directory is similar to how RAM on a computer works?</strong></p>
+	            <p>/tmp</p>
+	            <p><strong>Name the home directory of the root user </strong></p>
+	            <p>/root</p>
+		    <h4><strong>Task 7 - Conclusions and Summaries </strong></h4>
+	            <p><strong> Read and press complete </strong></p>
+	            <h4><strong>Task  8- Linux Fundamentals Part 3 </strong></h4>
+		    <p>Read and press complete</p>
+
+
+
+
+
+			    <div class="blog-post-body">
+				    
+				    <section class="blog-list px-3 py-5 p-md-5">
+		    <div class="container">
+			    
+			    
+			    
+				
+		    </div>
+	    </section>
+
+</body>
+</html> 

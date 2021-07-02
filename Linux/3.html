@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+    <title>InfoSec Write-ups</title>
+    
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Blog Template">
+    <meta name="author" content="Xiaoying Riley at 3rd Wave Media">    
+    <link rel="shortcut icon" href="favicon.ico"> 
+    
+    <!-- FontAwesome JS-->
+	<script defer src="../assets/fontawesome/js/all.min.js"></script>
+    
+    <!-- Plugin CSS -->
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.14.2/styles/monokai-sublime.min.css">
+    
+    <!-- Theme CSS -->  
+    <link id="theme-style" rel="stylesheet" href="../assets/css/theme-7.css">
+    
+
+</head> 
+
+<body>
+    
+    <header class="header text-center">	    
+	    <h1 class="blog-name pt-lg-4 mb-0"><a href="../index.html">Infosec Blog</a></h1>
+        
+	    <nav class="navbar navbar-expand-lg navbar-dark" >
+           
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+			</button>
+
+			<div id="navigation" class="collapse navbar-collapse flex-column" >
+				<div class="profile-section pt-3 pt-lg-0">
+					
+					<div class="bio mb-3">Hi, my name is ibrahimsaid. <br>I am a CyberSecurity redteam pentest and  researcher and CTF player.<br><a href="../about.html">Find out more about me</a></div><!--//bio-->
+					<ul class="social-list list-inline py-3 mx-auto">
+			            <li class="list-inline-item"><a href="https://twitter.com/ibrahimsaidkali"><i class="fab fa-twitter fa-fw"></i></a></li>
+			            <li class="list-inline-item"><a href="https://www.linkedin.com/in/ibrahim-said-0331691b9/"><i class="fab fa-linkedin-in fa-fw"></i></a></li>
+			            <li class="list-inline-item"><a href="https://github.com/Blackhat-red-team"><i class="fab fa-github-alt fa-fw"></i></a></li>
+			            <li class="list-inline-item"><a href="https://www.facebook.com/ibrahimsaidpentest"><i class="fab fa-facebook-f"></i></a></li>
+			        </ul><!--//social-list-->
+			        <hr> 
+				</div><!--//profile-section-->
+				
+				<ul class="navbar-nav flex-column text-left">
+					<li class="nav-item">
+					    <a class="nav-link" href="../index.html"><i class="fas fa-home fa-fw mr-2"></i>Blog Home <span class="sr-only">(current)</span></a>
+					</li>
+					
+					<li class="nav-item">
+					    <a class="nav-link" href="../about.html"><i class="fas fa-user fa-fw mr-2"></i>About Me</a>
+					</li>
+				</ul>
+				
+			</div>
+		</nav>
+    </header>
+    
+    <div class="main-wrapper">
+	    
+	    <article class="blog-post px-3 py-5 p-md-5">
+		    <div class="container">
+			    <header class="blog-post-header">
+				    <h2 class="title mb-2"><a href="https://tryhackme.com/room/linuxfundamentalspart3">Linux Fundamentals Part 3</a></h2>
+			    </header>
+			    </a>
+		    <h4><strong>Task 1 - Introduction </strong></h4>
+		    <p>Read and press complete</p>
+		    <h4><strong>Task 2 - Deploy Your Linux Machine </strong></h4>
+		    <p><strong> I've logged into the Linux Fundamentals Part 3 machine using SSH and have deployed the AttackBox successfully! </strong></p>
+		    <p>No answer needed</>
+		    <h4><strong>Task 3 - Terminal Text Editors </strong></h4>
+		    <p><strong> Create a file using Nano </strong></p>
+	            <p>No answer needed</p>
+		    <p><strong> Edit "task3" located in "tryhackme"'s home directory using Nano. What is the flag? (nano task3) </strong></p>
+	            <p>THM{TEXT_EDITORS}</p>
+	            <img src="images/Linux Part 3/nano.png" alt="image" >			
+		    <h4><strong>Task 4 - General/Useful Utilities </strong></h4>
+		    <p><strong> Ensure you are connected to the deployed instance (MACHINE_IP) </strong></p>
+	            <p>No answer needed</p>
+		    <p><strong>Now, use Python 3's "HTTPServer" module to start a web server in the home directory of the "tryhackme" user on the deployed instance.</strong></p>
+	            <p>No answer needed</p>
+	            <img src="images/Linux Part 3/http.png" alt="image" >			
+		    <p><strong>Download the file http://MACHINE_IP:8000/.flag.txt onto the TryHackMe AttackBox</strong></p>
+		    <p><strong>What are the contents?</strong></p>
+	            <p>THM{WGET_WEBSERVER}</p>
+	            <img src="images/Linux Part 3/wget.png" alt="image" >
+	    	    <p><strong>Create and download files to further apply your learning -- see how you can read the documentation on Python3's "HTTPServer" module. </strong></p>
+	    	    <p><strong>Use Ctrl + C to stop the Python3 HTTPServer module once you are finished.</strong></p>
+	            <p>No answer needed</p>	    
+		    <h4><strong>Task 5 - Processes 101 </strong></h4>
+	            <p><strong> Read me! </strong></p>
+	            <p>No answer needed</p>
+	            <p><strong> If we were to launch a process where the previous ID was "300", what would the ID of this new process be? </strong></p>
+	            <p>301</p>
+	            <p><strong> If we wanted to cleanly kill a process, what signal would we send it? </strong></p>
+	            <p>SIGTERM</p>
+	            <p><strong> Locate the process that is running on the deployed instance (MACHINE_IP). What flag is given? (ps aux) </strong></p>
+	            <p>THM{PROCESSES}</p>
+	            <img src="images/Linux Part 3/processes.png" alt="image" >
+	            <p><strong> What command would we use to stop the service "myservice"? </strong></p>
+	            <p>systemctl stop myservice</p>
+	            <p><strong> What command would we use to start the same service on the boot-up of the system? </strong></p>
+	            <p>systemctl enable myservice</p>
+	            <p><strong> What command would we use to bring a previously backgrounded process back to the foreground? </strong></p>
+	            <p>fg</p>	
+		    <h4><strong>Task 6 - Maintaining Your System: Automation </strong></h4>
+	            <p><strong>Ensure you are connected to the deployed instance and look at the running crontabs.</strong></p>
+	            <p>No answer needed</p>
+	            <p><strong>When will the crontab on the deployed instance (MACHINE_IP) run? (crontab -e)</strong></p>
+	            <p>@reboot</p>	    
+	            <img src="images/Linux Part 3/crontab.png" alt="image" >
+		    <h4><strong>Task 7 - Maintaining Your System: Package Management </strong></h4>
+	            <p><strong>  Since TryHackMe instances do not have an internet connection...this task only requires you to read through the material. </strong></p>
+                    <p>No answer needed</p>
+	            <h4><strong>Task  8- Maintaining Your System: Logs </strong></h4>
+	            <p><strong>Look for the apache2 logs on the deployable Linux machine</strong></p>
+	            <p>No answer needed</p>
+	            <p><strong>What is the IP address of the user who visited the site? (nano /var/log/apache2/access.log.1)</strong></p>
+	            <p>10.9.232.111</p>
+	            <img src="images/Linux Part 3/ip.png" alt="image" >
+	            <p><strong>What file did they access?</strong></p>
+	            <p>catsanddogs.jpg</p>
+	  	    <h4><strong>Task  9- Conclusions & Summaries </strong></h4>
+	            <p><strong> Terminate the machine deployed in this room from task 2. </strong></p>
+	            <p>No answer needed</p>
+	            <p><strong>Continue your learning in other Linux-dedicated rooms</strong></p>
+	            <p>No answer needed</p>
+
+
+
+
+			    <div class="blog-post-body">
+				    
+				    <section class="blog-list px-3 py-5 p-md-5">
+		    <div class="container">
+			    
+			    
+			    
+				
+		    </div>
+	    </section>
+
+</body>
+</html> 
